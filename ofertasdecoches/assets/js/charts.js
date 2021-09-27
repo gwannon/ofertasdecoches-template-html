@@ -27,7 +27,10 @@ var lineChart = new Chart(document.getElementById('lineChart'), {
     },
     plugins: {
       legend: {
-        position: 'bottom'
+        position: 'bottom',
+        labels: {
+          padding: 40
+        },
       }
   	}
   } 

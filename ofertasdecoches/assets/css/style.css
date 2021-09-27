@@ -38,7 +38,7 @@ body {
 
 #portada {
   min-height: 150px;
-  background: #929ca6 url('../img/cabecera.jpg') right top no-repeat;
+  background: #9298a3 url('../img/cabecera-ofertas.png') right center no-repeat;
   background-size: cover;
   position: relative;
 }
@@ -46,7 +46,7 @@ body {
 #portada:before {
   content: "";
   display: block;
-  background: transparent url('../img/logo-ofertasdecoches.png') left center no-repeat;
+  background: transparent url('../img/logo-ofertasdecoches.png') left bottom no-repeat;
   background-size: contain;  
   width: 157px;
   height: 52px;
@@ -57,7 +57,7 @@ body {
 
 @media (min-width: 700px) {
   #portada {
-    min-height: 300px;
+    min-height: 350px;
   }
   #portada:before {
     width: 438px;
@@ -91,7 +91,7 @@ section#datos > div {
 section#datos h1 {
   color: #fff;
   padding: 0px;
-  margin: 0px auto 60px;
+  margin: 0px auto 40px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -182,6 +182,9 @@ section#datos .threeCols > * > span {
 }
 
 @media (min-width: 700px) {
+  section#datos h1 {
+    margin-bottom: 60px;
+  }
 
   section#datos h1 span {
     width: auto;
@@ -289,11 +292,18 @@ section#busquedas ul li span:nth-child(3) > span {
   font-weight: 700;
   line-height: 120%;
   color: var(--orange);
-  background-color: var(--paleorange);
+  /*background-color: var(--paleorange);*/
+  background: repeating-linear-gradient(
+    116deg,
+    #ffecca,
+    #ffecca 10px,
+    var(--lightorange) 10px,
+    var(--lightorange) 20px
+  );
   display: block;
   transition: width 1.5s;
   width: 0%;
-  overflow: hidden;
+  /*overflow: hidden;*/
 }
 
 @media (min-width: 700px) {
@@ -342,6 +352,7 @@ section#busquedas ul li span:nth-child(3) > span {
   section#busquedas ul li span:nth-child(3) > span {
     padding: 10px;
     font-size: 24px;
+    overflow: hidden;
   }
 }
 
@@ -429,10 +440,10 @@ footer {
 
 footer h3 {
   margin: 0px;
-  padding: 60px 20px 30px;
+  padding: 50px 20px 5px;
   color: var(--darkgrey);
-  font-size: 22px;
-  line-height: 120%; 
+  font-size: 26px;
+  line-height: 100%;
   font-weight: 600;
   text-align: center;
 }
@@ -462,7 +473,7 @@ footer .columnas a:hover {
 
 footer .columnas {
   margin: 0px auto 20px;
-  padding: 0px 20px;
+  padding: 0px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
