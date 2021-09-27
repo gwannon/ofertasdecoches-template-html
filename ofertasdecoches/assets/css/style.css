@@ -4,6 +4,7 @@
   --darkgrey: #919191;
   --paleorange: #fcd898;
   --lightorange: #fef5e3;
+  --black: #242628;
   --max-width: 1200px;
 }
 
@@ -421,3 +422,106 @@ section#resumen ul li:last-child:after {
 }
 
 /* -------------- Pie ------------------ */
+
+footer {
+  background-color: var(--black);
+}
+
+footer h3 {
+  margin: 0px;
+  padding: 60px 20px 30px;
+  color: var(--darkgrey);
+  font-size: 22px;
+  line-height: 120%; 
+  font-weight: 600;
+  text-align: center;
+}
+
+footer ul {
+  text-align: center;
+  padding: 0px 0px 40px 0px
+}
+
+footer ul li {
+  display: inline;
+  padding: 0px 10px;
+}
+
+footer ul li a i {
+  transition: color 0.3s;
+  font-size: 22px;
+  line-height: 120%; 
+  font-weight: 600;
+  color: var(--darkgrey);
+}
+
+footer ul li a:hover i,
+footer .columnas a:hover {
+  color: #fff;
+}
+
+footer .columnas {
+  margin: 0px auto 20px;
+  padding: 0px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 700px;
+}
+
+footer .columnas div {
+  width: 100%;
+  color: var(--darkgrey);
+  font-size: 14px;
+  line-height: 120%; 
+  font-weight: 500;
+  padding: 0px 0px 40px 0px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+footer .columnas div b {
+  display: inline-block;
+  position: relative;
+  color: #fff;
+  padding: 0px 0px 10px 32px;
+}
+
+footer .columnas div.llamar b {
+  padding-left: 26px;
+}
+
+footer .columnas div b i {
+  position: absolute;
+  left: 0px;
+  top: -5px;
+  font-size: 24px;
+  color: var(--darkgrey);
+}
+
+footer .columnas div a {
+  transition: color 0.3s;
+  color: var(--darkgrey);
+
+}
+
+footer div.legal {
+  text-align: center;
+  padding: 30px;
+  border-top: 1px solid var(--darkgrey);
+  color: var(--darkgrey);
+  font-size: 14px;
+  line-height: 120%; 
+  font-weight: 500;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+@media (min-width: 700px) {
+  footer .columnas div {
+    width: auto;
+    margin: 0px 20px;
+    text-align: left;
+  }
+}
