@@ -32,37 +32,11 @@ var lineChart = new Chart(document.getElementById('lineChart'), {
           padding: 40
         },
       }
-  	}
+    }
   } 
-});
-
-/* Gráfico leads y qleads */
-var pieChart = new Chart(document.getElementById('pieChart'), {
-  type: 'pie',
-  data: {
-    labels: ['Conversión'],
-    datasets: [{
-      data: [conversion, (100 - conversion)],
-      backgroundColor: ['#eca73f','#e0e0e0'],
-      borderColor: '#fff',
-      borderWidth: 1,
-      pointRadius: 6,
-    }]
-  },
-  options: {
-    plugins: {
-      tooltip: {
-        enabled: false
-      },
-      legend: {
-        display: false
-      },
-  	},
-  }
 });
 
 /* Gráfico búsquedas */
 jQuery("section#busquedas ul li span:nth-child(3) > span ").each(function(){
-  console.log(jQuery(this).data("percent")+"%");
   jQuery(this).css("width", jQuery(this).data("percent")+"%");
 });

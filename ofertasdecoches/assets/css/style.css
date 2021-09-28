@@ -66,10 +66,12 @@ body {
 }
 
 /* -------------- Gráficos ------------------ */
-#pieChart {
-  max-width: 200px;
-  max-height: 200px;
-  width: 100%; 
+section#datos .threeCols > #pieChart {
+  width: 200px;
+  height: 200px;
+  background-image: conic-gradient(#eca73f calc(360deg / 100 * var(--percent)), #e0e0e0 0);
+  border-radius: 50%;
+  margin: 20px 0px;
 }
 
 #lineChart {
@@ -122,6 +124,7 @@ section#datos > div > p {
   max-width: 600px;
   padding: 0px 10px;
   margin: 10px auto 30px;
+  font-weight: 400;
   font-size: 18px;
   font-weight: 400;
   line-height: 120%;
@@ -202,7 +205,7 @@ section#datos .threeCols > * > span {
   section#datos .twoCols > * {
     width: 50%;
   }  
-  section#datos .threeCols > canvas {
+  section#datos .threeCols > #pieChart {
     margin: 0px 20px;
   }  
 }
@@ -262,6 +265,7 @@ section#busquedas ul li {
 
 section#busquedas ul li img {
   width: 25%;
+  height: auto;
   display: none;
 }
 
