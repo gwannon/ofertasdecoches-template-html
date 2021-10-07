@@ -1,0 +1,50 @@
+:root {
+  --main-color: #f7a513;
+  --secondary-color: #f7a513;
+  --cols: 4;
+  --double-cols: 1;
+}
+
+.table {
+
+}
+
+.table .row {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+
+.table .row:nth-child(odd) {
+	background-color: var(--secondary-color);
+}
+
+.table .row .col {
+  border: 1px solid red;
+	padding: 10px;
+	box-sizing: border-box;
+	width: 50%;
+}
+.table .row .col.double {
+  width: 100%;
+}
+
+@media (min-width: 600px) {	
+  .table .row .col {
+    width: 33.33%;
+  }
+  .table .row .col.double {
+		width: 66.66%;
+	}
+}
+
+@media (min-width: 900px) {	
+	.table .row .col {
+		width: calc(100% / (var(--cols) + (var(--double-cols) * 2)));
+	}
+
+	.table .row .col.double {
+		width: calc((100% / (var(--cols) + (var(--double-cols) * 2)))*2);
+	}
+}
