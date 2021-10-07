@@ -1,3 +1,44 @@
 :root {
 
 }
+
+
+section#evolucion .threeRows {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 120%;
+  flex-wrap: wrap;
+}
+
+section#evolucion .threeRows > * {
+  width: 100%;
+  text-align: center;
+  max-width: 200px;
+  display: block;
+  margin: 0px;
+  text-align: center;
+}
+
+section#evolucion .threeRows .pieChart {
+  width: 200px;
+  height: 200px;
+  background-image: conic-gradient(#eca73f calc(360deg / 100 * var(--percent)), #e0e0e0 0);
+  border-radius: 50%;
+  margin: 20px 0px;
+}
+
+section#evolucion .threeRows  > * > span {
+  font-size: 54px;
+  font-weight: 700;
+  line-height: 120%;
+  color: var(--orange);
+  display: inline-block;
+  padding: 5px;
+  border-top: 1px solid var(--orange);
+  border-bottom: 1px solid var(--orange);
+  margin: 20px 0px 0px 0px;
+}
