@@ -1,17 +1,83 @@
 :root {
+  --max-width: 1000px;
+}
+
+section#evolucion {
+  padding: 30px 0px;
 
 }
+
+section#evolucion > div {
+  background-color: #fff;
+  padding: 0px 20px 60px;
+  text-align: center;
+  margin: 0px auto;
+  max-width: var(--max-width);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+} 
 
 
 section#evolucion .threeRows {
   display: flex;
-  align-items: center;
   flex-direction: column;
   align-items: flex-start;
   font-size: 24px;
   font-weight: 700;
   line-height: 120%;
   flex-wrap: wrap;
+  position: relative;
+  width: 100%;
+  align-items: center;
+  margin: 30px 0px;
+  padding: 20px 10px 30px;
+  box-sizing: border-box;
+}
+
+@media (min-width: 500px) and (max-width: 899px) {
+  section#evolucion .threeRows:nth-child(even):before {
+    content: " ";
+    display: block;
+    height: 100%;
+    width: 1px;
+    max-width: var(--max-width);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: repeating-linear-gradient( 180deg, #fff, #fff 10px, var(--darkgrey) 10px, var(--darkgrey) 20px );
+  }
+
+  section#evolucion .threeRows {
+    width: 50%;
+  }
+}
+
+@media (min-width: 900px) {
+  section#evolucion .threeRows:not(:nth-child(3n - 2)):before {
+    content: " ";
+    display: block;
+    height: 100%;
+    width: 1px;
+    max-width: var(--max-width);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: repeating-linear-gradient( 180deg, #fff, #fff 10px, var(--darkgrey) 10px, var(--darkgrey) 20px );
+  }
+
+  section#evolucion .threeRows {
+    width: 33.33%;
+  }
+}
+
+section#evolucion .threeRows.especial {
+  background-color: var(--lightorange);
+  border-radius: 20px;
+}
+
+section#evolucion .threeRows.especial:before  {
+  display: none !important;
 }
 
 section#evolucion .threeRows > * {
@@ -41,4 +107,11 @@ section#evolucion .threeRows  > * > span {
   border-top: 1px solid var(--orange);
   border-bottom: 1px solid var(--orange);
   margin: 20px 0px 0px 0px;
+}
+
+section#evolucion .threeRows  > * > small {
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 120%;
+  display: block;
 }
