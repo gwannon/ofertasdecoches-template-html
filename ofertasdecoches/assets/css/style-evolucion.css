@@ -16,18 +16,68 @@
 }
 
 
-.table .row:nth-child(odd) {
-	background-color: var(--secondary-color);
+.table .row:nth-child(even) {
+	background-color: var(--grey);
 }
 
 .table .row .col {
-  border: 1px solid red;
-	padding: 10px;
 	box-sizing: border-box;
 	width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px 20px;
+  align-items: center;
+  word-wrap: break-word;
+  position: relative;
 }
+
+.table .row .col:before {
+  content: " ";
+  display: block;
+  height: 100%;
+  width: 1px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background: repeating-linear-gradient( 180deg, #fff, #fff 10px, var(--darkgrey) 10px, var(--darkgrey) 20px );
+}
+
+.table .row:nth-child(even) .col:before {
+  background: repeating-linear-gradient( 180deg, var(--grey), var(--grey) 10px, var(--darkgrey) 10px, var(--darkgrey) 20px );
+}
+
 .table .row .col.double {
   width: 100%;
+  padding: 20px 0px;
+}
+
+.table .row .col h2,
+.table .row .col h3 {
+  font-size: 16px;
+  line-height: 120%;
+  font-weight: 700;
+  text-align: center;
+  padding: 0px 10px;
+  margin: 0px;
+  min-height: 38px;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+.table .row .col hr {
+  width: 80%;
+  border-top: 1px solid var(--orange);
+}
+
+.table .row .col p {
+  font-size: 14px;
+  line-height: 120%;
+  font-weight: 400;
+  text-align: center;
+  padding: 0px 10px;
+  margin: 0px;
+  min-height: 32px;
 }
 
 @media (min-width: 600px) {	
@@ -39,7 +89,7 @@
 	}
 }
 
-@media (min-width: 900px) {	
+@media (min-width: 1100px) {	
 	.table .row .col {
 		width: calc(100% / (var(--cols) + (var(--double-cols) * 2)));
 	}
@@ -47,4 +97,37 @@
 	.table .row .col.double {
 		width: calc((100% / (var(--cols) + (var(--double-cols) * 2)))*2);
 	}
+}
+
+
+.table .row .col .grid {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  flex-wrap: wrap;
+  margin: 5px 0px 0px;
+}
+
+.table .row .col .grid > div {
+  width: 33.33%;
+  text-align: center;
+  padding: 5px 10px;
+  box-sizing: border-box;
+  font-size: 12px;
+  line-height: 120%;
+}
+
+.table .row .col .grid > div:nth-child(1) {
+  background-color: var(--lightorange);
+  font-weight: 700;
+}
+
+.table .row .col .grid > div:nth-child(2) {
+  background-color: var(--paleorange);
+  font-weight: 700;
+}
+
+.table .row .col .grid > div:nth-child(3) {
+  background-color: var(--orange);
+  font-weight: 700;
 }
