@@ -3,6 +3,10 @@
   --double-cols: 1;
 }
 
+#portada {
+  background: #bfbfbf url('../img/#bfbfbf') right center no-repeat;
+}
+
 .table h1 {
   max-width: 1005px;
   padding: 50px 10px 30px;

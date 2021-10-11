@@ -2,6 +2,10 @@
   --max-width: 1000px;
 }
 
+#portada {
+  background: #33252d url('../img/cabecera-leads.png') right center no-repeat;
+}
+
 section#evolucion {
   padding: 30px 0px;
 

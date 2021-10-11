@@ -92,7 +92,7 @@ body {
 
 #portada {
   min-height: 150px;
-  background: #9298a3 url('../img/cabecera-ofertas.png') right center no-repeat;
+  background: #bfbfbf url('../img/cabecera-tabla.png') right center no-repeat;
   background-size: cover;
   position: relative;
 }
