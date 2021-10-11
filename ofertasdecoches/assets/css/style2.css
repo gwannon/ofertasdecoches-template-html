@@ -1,6 +1,6 @@
 :root {
   --orange: #f7a513;
-  --grey: #e0e0e0;
+  --grey: #ececec;
   --darkgrey: #919191;
   --paleorange: #fcd898;
   --lightorange: #fef5e3;
@@ -230,7 +230,7 @@ footer div.legal {
 
 .table h1 {
   max-width: 1005px;
-  padding: 50px 10px 30px;
+  padding: 30px 10px 30px;
   margin: 0px auto 50px;
   font-size: 25px;
   line-height: 120%;
@@ -244,7 +244,8 @@ footer div.legal {
   color: var(--orange);
 }
 
-.table h1:after {
+.table h1:after,
+.table h1:before {
   content: " ";
   position: absolute;
   background-color: var(--orange); 
@@ -253,6 +254,11 @@ footer div.legal {
   height: 1px;
   bottom: 0px;
   left: calc(50% - 100px);
+}
+
+.table h1:before{
+  bottom: auto;
+  top: 0px;
 }
 
 .table .row {
@@ -409,6 +415,16 @@ footer div.legal {
   line-height: 120%;
 }
 
+.table .row .col .grid > div.green {
+  font-weight: 700;
+  color: green;
+}
+
+.table .row .col .grid > div.red {
+  font-weight: 700;
+  color: red;
+}
+
 .table .row .col .grid > div:nth-child(1) {
   background-color: var(--lightorange);
   font-weight: 700;
@@ -521,8 +537,8 @@ section#evolucion .threeRows.especial > * {
 }
 
 section#evolucion .threeRows .pieChart {
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   background-image: conic-gradient(#eca73f calc(360deg / 100 * var(--percent)), #e0e0e0 0);
   border-radius: 50%;
   margin: 20px 0px;
