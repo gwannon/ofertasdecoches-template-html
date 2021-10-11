@@ -1,6 +1,4 @@
 :root {
-  --main-color: #f7a513;
-  --secondary-color: #f7a513;
   --cols: 4;
   --double-cols: 1;
 }
@@ -113,6 +111,7 @@
 }
 .table .row .col hr {
   width: 80%;
+  border: none;
   border-top: 1px solid var(--orange);
 }
 
