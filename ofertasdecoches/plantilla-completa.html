@@ -1,0 +1,280 @@
+<html>
+<head>
+  <title>PLANTILLA OFERTASDECOCHES</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+  <link href="assets/css/style-completa.css" rel="stylesheet" />
+  <script>
+    const dataLine = {
+      months: ['JUNIO', 'JULIO', 'AGOSTO', 'SEPTIEMBRE', 'OCTUBRE', 'NOVIEMBRE'],
+      leads: [32, 19, 3, 5, 2, 103],
+      qleads: [22, 29, 13, 15, 32, 33]
+    }
+  </script>
+</head>
+<body>
+  <section id="portada"></section>
+  <section id="datos">
+    <div class="borderDashed">
+      <h1><span>Concesionario: M.CONDE</span><span>Análisis <b>ENERO 2021</b></span></h1>
+      <img src="assets/img/logo-audi.jpg" alt="" />
+      <p>Informe de resultados para medir y evaluar la trayectoria/evolución mensual en base a las principales métricas y KPI´s del negocio.</p>
+      <div class="twoCols">      
+        <p>LEADS<br/>TOTALES<br/><span id="leadsTotales">1.532</span></p>
+        <p><br/>QLEADS<br/><span id="qLeads">896</span></p>
+      </div>
+      <div class="threeCols"> 
+        <p>% CONVERSIÓN DE LEAD A QLEAD </p>
+        <div class="pieChart" style="--percent: 32;"></div>
+        <p><span>32%</span></p>
+      </div>
+    </div>
+  </section>
+  <section id="busquedas">
+    <div class="borderDashed">
+      <h2>VOLUMEN DE BÚSQUEDA MARCA EN ZONA</h2>
+      <h3>EN EL MES DE ENERO</h3>
+      <p>17.350</p>
+      <h4>Principales modelos:</h4>
+      <ul>
+        <li>
+          <img src="assets/img/coche-1.jpg" alt="" />
+          <span>Audi A1 Sportback</span>
+          <span><span data-percent="80">1.345</span></span>
+        </li>
+        <li>
+          <img src="assets/img/coche-2.jpg" alt="" />
+          <span>Audi Q2</span>
+          <span><span data-percent="73">705</span></span>
+        </li>
+        <li>
+          <img src="assets/img/coche-3.jpg" alt="" />
+          <span>Audi SQ5 Sportback</span>
+          <span><span data-percent="50">505</span></span>
+        </li>
+        <li>
+          <img src="assets/img/coche-4.jpg" alt="" />
+          <span>Audi S8</span>
+          <span><span data-percent="10">145</span></span>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section id="historico">
+    <div>
+      <h2>GRÁFICO HISTÓRICO DE RESULTADOS</h2>
+      <canvas id="lineChart"></canvas>
+    </div>
+  </section>
+  <section id="resumen">
+    <h2>Resumen y conclusiones</h2>
+    <ul>
+      <li>El volumen de búsqueda real (9 enero 2021 - 9 febrero 2021) en Madrid en relación a la marca Audi ha sido de <b>17.350 impresiones</b>.</li>
+      <li><b>32.629 impresiones</b> (display) correspondientes a Audi M.Conde en Madrid,referentes a acciones de retargeting.</li>
+      <li><b>3.817 impresiones</b> (búsqueda) correspondientes a Audi M.Conde en Madrid, lo que supone el <b>22%</b> de la búsqueda total de la marca en este territorio geográﬁco.</li>
+      <li><b>93.484 impresiones</b> (redes sociales) correspondientes a Audi M.Conde en Madrid.</li>
+    </ul>
+
+  </section>
+  <section id="evolucion">
+    <div>
+      <div class="threeRows">
+        <p><span>32%</span></p>
+        <div class="pieChart" style="--percent: 32;"></div>
+        <p>LEADS <small>contactados por la concesión</small></p>
+      </div>
+      <div class="threeRows">
+        <p><span>57%</span></p>
+        <div class="pieChart" style="--percent: 57;"></div>
+        <p>LEADS <small>ofertados</small></p>
+      </div>
+      <div class="threeRows">
+        <p><span>84%</span></p>
+        <div class="pieChart" style="--percent: 84;"></div>
+        <p>VISITAS <small>a la concesión</small></p>
+      </div>
+      <div class="threeRows">
+        <p><span>12%</span></p>
+        <div class="pieChart" style="--percent: 12;"></div>
+        <p>VENTAS <small>en concesión</small></p>
+      </div>
+      <div class="threeRows">
+        <p><span>45%</span></p>
+        <div class="pieChart" style="--percent: 45;"></div>
+        <p>VENTAS <small>fuera de concesión</small></p>
+      </div>
+      <div class="threeRows especial">
+        <p><span>9%</span></p>
+        <div class="pieChart" style="--percent: 9;"></div>
+        <p>OFERTADOS EN <b>96H</b></p>
+      </div>
+    </div>
+  </section>
+	<section class="table">
+    <h1><b>INFORME EVOLUCION SEMANAL</b> GESTION OPORTUNIDADES COMERCIALES ALTAMENTE CUALIFICADAS</h1>
+    <div class="row">
+      <div class="col">
+        <h2>FECHA ENVIO OPORTUNIDAD</h2>
+        <hr/>
+        <p>2/8/2021<br/>00:00:00</p>
+      </div>
+      <div class="col">
+        <h2>DATOS OPORTUNIDAD</h2>
+        <hr/>
+        <p>Juan Nadie Fulanito</p>
+      </div>
+      <div class="col">
+        <h2><span>687 60 66 68</span></h2>
+        <hr/>
+        <p>juan_nf@gmail.com</p>
+      </div>
+      <div class="col">
+        <h2>VEHÍCULO DE INTERÉS</h2>
+        <hr/>
+        <p>BMW SERIE 1</p>
+      </div>
+      <div class="col double">
+        <h3>SEGUIMIENTO OPORTUNIDADES</h3>
+        <div class="grid">
+          <div>48 H</div>
+          <div>72 H</div>
+          <div>96 H</div>
+          <div class="red">NO LOCALIZADO</div>
+          <div class="green">OFERTADO</div>
+          <div></div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <h2>FECHA ENVIO OPORTUNIDAD</h2>
+        <hr/>
+        <p>2/8/2021<br/>00:00:00</p>
+      </div>
+      <div class="col">
+        <h2>DATOS OPORTUNIDAD</h2>
+        <hr/>
+        <p>Juan Nadie Fulanito</p>
+      </div>
+      <div class="col">
+        <h2>687 60 66 68</h2>
+        <hr/>
+        <p>juan_nf@gmail.com</p>
+      </div>
+      <div class="col">
+        <h2>VEHÍCULO DE INTERÉS</h2>
+        <hr/>
+        <p>BMW SERIE 1</p>
+      </div>
+      <div class="col double">
+        <h3>SEGUIMIENTO OPORTUNIDADES</h3>
+        <div class="grid">
+          <div>48 H</div>
+          <div>72 H</div>
+          <div>96 H</div>
+          <div class="red">NO LOCALIZADO</div>
+          <div class="green">OFERTADO</div>
+          <div></div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <h2>FECHA ENVIO OPORTUNIDAD</h2>
+        <hr/>
+        <p>2/8/2021<br/>00:00:00</p>
+      </div>
+      <div class="col">
+        <h2>DATOS OPORTUNIDAD</h2>
+        <hr/>
+        <p>Juan Nadie Fulanito</p>
+      </div>
+      <div class="col">
+        <h2>687 60 66 68</h2>
+        <hr/>
+        <p>juan_nf@gmail.com</p>
+      </div>
+      <div class="col">
+        <h2>VEHÍCULO DE INTERÉS</h2>
+        <hr/>
+        <p>BMW SERIE 1</p>
+      </div>
+      <div class="col double">
+        <h3>SEGUIMIENTO OPORTUNIDADES</h3>
+        <div class="grid">
+          <div>48 H</div>
+          <div>72 H</div>
+          <div>96 H</div>
+          <div class="red">NO LOCALIZADO</div>
+          <div class="green">OFERTADO</div>
+          <div></div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <h2>FECHA ENVIO OPORTUNIDAD</h2>
+        <hr/>
+        <p>2/8/2021<br/>00:00:00</p>
+      </div>
+      <div class="col">
+        <h2>DATOS OPORTUNIDAD</h2>
+        <hr/>
+        <p>Juan Nadie Fulanito</p>
+      </div>
+      <div class="col">
+        <h2>687 60 66 68</h2>
+        <hr/>
+        <p>juan_nf@gmail.com</p>
+      </div>
+      <div class="col">
+        <h2>VEHÍCULO DE INTERÉS</h2>
+        <hr/>
+        <p>BMW SERIE 1</p>
+      </div>
+      <div class="col double">
+        <h3>SEGUIMIENTO OPORTUNIDADES</h3>
+        <div class="grid">
+          <div>48 H</div>
+          <div>72 H</div>
+          <div>96 H</div>
+          <div class="red">NO LOCALIZADO</div>
+          <div class="green">OFERTADO</div>
+          <div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <h3>ofertadecoches.com</h3>
+    <ul>
+      <li><a href="https://facebook.com/OfertadeCoches" target="_blank"><i class="fab fa-facebook"></i></a></li>
+      <li><a href="https://twitter.com/ofertadecoches_" target="_blank"><i class="fab fa-twitter"></i></a></li>
+      <li><a href="https://instagram.com/ofertadecoches" target="_blank"><i class="fab fa-instagram"></i></a></li>
+      <li><a href="https://www.linkedin.com/company/ofertadecoches" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+      <li><a href="https://www.youtube.com/channel/UCfLgIkG-zA8AnG0SPtfSCQg/" target="_blank"><i class="fab fa-youtube"></i></a></li>
+    </ul>
+    <div class="columnas">
+      <div class="asistencia">
+        <b><i class="fas fa-headset"></i>Asistencia</b><br/>
+        Lun-vie: 9:00 - 19:00<br/>
+        Sab: 9.00 - 13:00
+      </div>
+      <div class="llamar">
+        <b><i class="fas fa-phone-volume"></i> Llamar</b><br/>
+        <a href="tel:+34900525661">900 525 661</a>
+      </div>
+      <div class="correo">
+        <b><i class="far fa-envelope"></i>Correo electrónico</b><br/>
+        <a href="mailto:info@ofertasdecoches.com">info@ofertasdecoches.com</a>
+      </div>
+    </div>
+    <div class="legal">© Copyright 2021 - VasDigital, S.L - OfertadeCoches.com</div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@3.5.1/dist/chart.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="assets/js/charts.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet" />
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet" /> -->
+</body>
+</html>
