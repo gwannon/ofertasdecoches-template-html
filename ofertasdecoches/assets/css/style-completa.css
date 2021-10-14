@@ -84,6 +84,10 @@ section#datos > div {
   max-width: var(--max-width);
 } 
 
+.parcial section#datos > div {
+  padding-bottom: 0px;
+}
+
 section#datos h1 {
   color: #fff;
   padding: 0px;
@@ -94,6 +98,10 @@ section#datos h1 {
   font-size: 20px;
   font-weight: 500;
   line-height: 120%;
+}
+
+.parcial section#datos h1 {
+  margin-bottom: 0px;
 }
 
 section#datos h1 span {
